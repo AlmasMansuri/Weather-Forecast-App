@@ -53,7 +53,7 @@ searchBtn.addEventListener("click", function (event) {
 let langLatData = { lon: "", lat: "" };
 
 function currentData(city) {
-  let longLaturl = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=a9325c02fbe57116b24144187e4af9e9`;
+  let longLaturl = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=a9325c02fbe57116b24144187e4af9e9`;
 
   fetch(longLaturl)
     .then(function (response) {
